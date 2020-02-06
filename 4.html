@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Type_title_here</title>
+  <meta charset="utf-8">
+  <style>
+/*block level element*/
+    h1{
+      border-width: 5px;
+      border-color:red;
+      border-style:solid;
+      padding: 20px; /*여백*/
+      margin: 20px; /*간격*/
+      width: 100px /*크기*/
+      /*display:inline,block,none*/
+    }
+    #grid div {
+      border:5px solid gray;
+    }
+    #grid {
+      border:5px pink solid;
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    div {
+      border:10px solid green;
+      font-size: 60px;
+    }
+    @media(min-width:800px){
+      div {
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Responsive
+  </div>
+  <h1><strong>main_title_here</strong></h1>
+  <div id="grid">
+    <div>NAVIGATION</div> <!-- span = inline-->
+    <div>ARTICLE</div>
+  </div>
+</body>
+</html>
